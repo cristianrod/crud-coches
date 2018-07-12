@@ -19,6 +19,19 @@ class CreateMarcasTable extends Migration
             $table->string('caracteristica');
             $table->timestamps();
         });
+
+        DB::table('marcas')->insert([
+            'nombre' => 'Audi',
+            'caracteristica' => 'Marca Alemana fundada en 1909',
+        ]);
+        DB::table('marcas')->insert([
+            'nombre' => 'Kia',
+            'caracteristica' => 'Marca Corena fundada en 1944',
+        ]);
+        DB::table('marcas')->insert([
+            'nombre' => 'Mazda',
+            'caracteristica' => 'Marca Japonesa fundada en 1920',
+        ]);
     }
 
     /**

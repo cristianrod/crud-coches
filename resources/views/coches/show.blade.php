@@ -6,6 +6,7 @@
     <div class="row">
         <div class="col-md-12 mt-4">
             <h2>Coches de {{ $marca->nombre }}</h2>
+            <a role="button" href="/coches/crear" class="btn btn-primary">Crear un nuevo coche</a>
             <table class="table mt-2">
                 <thead>
                 <tr>

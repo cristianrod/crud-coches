@@ -81,6 +81,10 @@ class CocheController extends Controller
         return redirect('/coches');
     }
 
+    /**
+     * @param Marca $marca
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function show(Marca $marca)
     {
         return view('coches.show', compact('marca'));

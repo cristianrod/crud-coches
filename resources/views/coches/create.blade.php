@@ -24,6 +24,7 @@
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Crear Coche</button>
+            </form>
         </div>
     </div>
 @endsection
