@@ -5,7 +5,8 @@
 @section ('contenido')
     <div class="row">
         <div class="col-md-12 mt-4">
-            <table class="table">
+            <a role="button" href="/coches/crear" class="btn btn-primary">Crear un nuevo coche</a>
+            <table class="table mt-2">
                 <thead>
                     <tr>
                         <th scope="col">Nombre</th>
@@ -18,8 +19,8 @@
                         <tr>
                             <td>{{ $coche->nombre }}</td>
                             <td>{{ $coche->caracteristica }}</td>
-                            <td><a role="button" href="#" class="btn btn-primary">Editar</a>
-                                <a role="button" href="#" class="btn btn-danger">Eliminar</a>
+                            <td><a role="button" href="/coches/editar/{{ $coche->id }}" class="btn btn-primary">Editar</a>
+                                <a role="button" href="/coches/eliminar/{{ $coche->id }}" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
                     @endforeach
