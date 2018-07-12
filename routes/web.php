@@ -10,3 +10,4 @@ Route::post('/coches', 'CocheController@store');
 Route::get('/coches/editar/{coche}', 'CocheController@edit');
 Route::post('/coches/actualizar/{coche}', 'CocheController@update');
 Route::get('/coches/eliminar/{coche}', 'CocheController@delete');
+Route::get('/coches/{marca}', 'CocheController@show');

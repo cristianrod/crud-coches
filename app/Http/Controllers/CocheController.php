@@ -80,4 +80,9 @@ class CocheController extends Controller
 
         return redirect('/coches');
     }
+
+    public function show(Marca $marca)
+    {
+        return view('coches.show', compact('marca'));
+    }
 }
